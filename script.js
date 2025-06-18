@@ -20,7 +20,8 @@ const addTask = () => {
     const checkbox = li.querySelector("input")
     let span1 = li.querySelector("span");
     const editbtn = li.querySelector(".editbtn");
-    console.log(span1.textContent);
+    //console.log(span1.textContent);
+    const deletebtn = li.querySelector(".deletebtn");
 
     checkbox.addEventListener("click", () => {
         span1.classList.toggle("checked");
@@ -36,6 +37,11 @@ const addTask = () => {
         span1.classList.remove("checked");
         counter();
 
+      }
+    })
+    deletebtn.addEventListener("click", function(){
+      if(window.confirm("Vous voulez vraiment supprimer cette tâche ?")){
+        tasks.removeChild(li);
       }
     })
 };

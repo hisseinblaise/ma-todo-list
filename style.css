@@ -97,3 +97,11 @@ h2 {
     text-decoration: line-through;
     color: gray;
 }
+footer{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: blueviolet;
+    padding: 0 68px;
+    border-radius: 10px ;
+    margin-top: 10px;
+}
